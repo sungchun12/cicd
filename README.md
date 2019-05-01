@@ -33,6 +33,10 @@ Issue the following Docker command:
 docker run --rm -it -e "URL1=<URL1>" -e "URL2=<URL2>" slalomdojo/env:cicd
 ```
 
+URL1: bit.ly/2LfLgOv
+
+URL2: bit.ly/2Lif4Kr
+
 The command above will spin up a container using the *slalomdojo/env* image and tag *cicd* (each Dojo has its own tag for the slalomdojo/env image). You will also notice that you need to specify two environment variables: **URL1** and **URL2**. You will be given further instructions at the beginning of the challenge. If you Docker command fails, please reach out to one of the organizers.
 
 Once you are in the container, you will need to use **kubectl** to interact with Kubernetes and retrieve Jenkins' IP address. The command below will retrieve the IP address, but wait! Before you run the command, note that it contains multiple occurrences of $$the string `jenkins-team<X>`. Replace `<X>` with the number of your team (e.g. Team 1 should `jenkins-team1`, Team 2 should be `jenkins-team2` etc). Once `<X>` has been replaced, run the command:
